@@ -15,63 +15,70 @@
 
 </head>
 <body>
-   <header>
-      <div id="log">
-          <a href="http://localhost:3000/"><img class="logo" src="../public/images/logo-mercado-liebre.svg"></a>
+    <header>
+        <div class="header-top">
+            <a href="http://localhost:3003/"><img class="logo" src="../public/images/logo-mercado-liebre.svg"></a>
 
-          <ul class="cuentas-ingresar-compras">
-              <il>
-                  <i class="fa-solid fa-id-card"><a href="http://localhost:3003/registro" target="_blank">  Crear cuentas</a></i>
-              </il>
-              <il>
-                  <i class="fa-solid fa-right-to-bracket"><a href="http://localhost:3003/iniciar-sesion" target="_blank"> Ingresa</a></i>
-              </il>
-              <il>
-                  <i class="fa-solid fa-basket-shopping"><a href="" target="_blank">  Mis compras</a></i>
-              </il>
-          </ul>
+            <form class="busqueda">
+                <input type="text" placeholder="buscar productos, marcas" style="color: gray; height: 25px; ">
+                <div class="icon-container">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </form>
+            
+            <i id="loguito" class="fa-solid fa-money-check-dollar"></i><h4>Compra en cuotas y sin tarjeta de credito </h4>
+        </div>
+        
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
+        <div class="header-down">
+            <ul class="ofertas">
+                <il><a href="http://localhost:3003/ofertas" target="_blank">Ofertas</a></il>
+                <il><a href="" target="_blank">Tiendas oficiales</a></il>
+                <il><a href="" target="_blank">Vender</a></il>
+                <il><a href="" target="_blank">Ayuda</a></il>
+            </ul>
+
+            
+            <ul class="cuentas-ingresar-compras">
+                <il>
+                    <a href="http://localhost:3003/registro" target="_blank">  Crear cuenta  <i class="fa-solid fa-id-card"></i></a>
+                </il>
+                <il>
+                    <a href="http://localhost:3003/iniciar-sesion" target="_blank"> Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a>
+                </il>
+                <il>
+                    <a href="" target="_blank">Mis compras  <i class="fa-solid fa-basket-shopping"></i></i></a>
+                </il>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+
+      <div class="div-main-iniciarSesion">
+        <div class="div-form-iniciarSesion">
+         <form action="" method="post">
+            <input type="text"  placeholder="nombre de usuario">
+
+            <input type="password" placeholder="contraseña" >
+
+            <button type="submit">enviar</button>
+         </form>
+        </div>
       </div>
       
+    </main>
 
-      <div class="promote">
-          <marquee>
-              <i id="loguito" class="fa-solid fa-money-check-dollar"><h4>Compra en cuotas y sin tarjeta de credito </h4></i>
-          </marquee>
-      </div>
-
-      <div class="header">
-          <ul class="ofertas">
-              <il><a href="http://localhost:3003/ofertas" target="_blank">Ofertas</a></il>
-              <il><a href="" target="_blank">Tiendas oficiales</a></il>
-              <il><a href="" target="_blank">Vender</a></il>
-              <il><a href="" target="_blank">Ayuda</a></il>
-          </ul>
-
-          <form class="busqueda">
-              <input type="text" placeholder="buscar productos, marcas" style="color: gray; height: 25px; ">
-              <div class="icon-container">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-              </div>
-          </form>
-
-      </div>
-  </header>
-  <main>
-      <div>
-         <form action="" method="post">
-
-
-
-         </form>
-      </div>
-  </main>
-  <footer>
-   <div class="footer-section">
-       <i class="fa-solid fa-credit-card" style="color: #2e6fe0;"></i>
-       <h3>Pagá con tarjeta o en efectivo</h3>
-       <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-   </div>
+    <footer>
+        <div class="footer-section">
+            <i class="fa-solid fa-credit-card" style="color: #2e6fe0;"></i>
+            <h3>Pagá con tarjeta o en efectivo</h3>
+            <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+        </div>
 
    <div class="footer-section">
        <i class="fa-solid fa-gift" style="color: #2e6fe0;"></i>

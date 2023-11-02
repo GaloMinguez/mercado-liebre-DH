@@ -17,8 +17,8 @@
 </head>
 <body>
     <header>
-        <div id="log">
-            <a href="http://localhost:3000/"><img class="logo" src="../public/images/logo-mercado-liebre.svg"></a>
+        <div class="header-top">
+            <a href="http://localhost:3003/"><img class="logo" src="../public/images/logo-mercado-liebre.svg"></a>
 
             <form class="busqueda">
                 <input type="text" placeholder="buscar productos, marcas" style="color: gray; height: 25px; ">
@@ -27,11 +27,14 @@
                 </div>
             </form>
             
-            <i id="loguito" class="fa-solid fa-money-check-dollar"><h4>Compra en cuotas y sin tarjeta de credito </h4></i>
+            <i id="loguito" class="fa-solid fa-money-check-dollar"></i><h4>Compra en cuotas y sin tarjeta de credito </h4>
         </div>
         
+        <div class="burger-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
 
-        <div class="header">
+        <div class="header-down">
             <ul class="ofertas">
                 <il><a href="http://localhost:3003/ofertas" target="_blank">Ofertas</a></il>
                 <il><a href="" target="_blank">Tiendas oficiales</a></il>
@@ -42,13 +45,13 @@
             
             <ul class="cuentas-ingresar-compras">
                 <il>
-                    <i class="fa-solid fa-id-card"><a href="http://localhost:3003/registro" target="_blank">  Crear cuenta</a></i>
+                    <a href="http://localhost:3003/registro" target="_blank">  Crear cuenta  <i class="fa-solid fa-id-card"></i></a>
                 </il>
                 <il>
-                    <i class="fa-solid fa-right-to-bracket"><a href="http://localhost:3003/iniciar-sesion" target="_blank"> Ingresa</a></i>
+                    <a href="http://localhost:3003/iniciar-sesion" target="_blank"> Ingresá  <i class="fa-solid fa-right-to-bracket"></i></a>
                 </il>
                 <il>
-                    <i class="fa-solid fa-basket-shopping"><a href="" target="_blank">  Mis compras</a></i>
+                    <a href="" target="_blank">Mis compras  <i class="fa-solid fa-basket-shopping"></i></i></a>
                 </il>
             </ul>
 
@@ -57,8 +60,12 @@
 
 
     <main>
+
+        <img class="banner" src="../public/images/img-home-banner.jpg" alt="banner">
+
         <h2>Basado en tu última visita</h2>
         <section>
+
             <div class="product">
                 <div class="product-details">
                     <img class="img-producto" src="../public/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
@@ -92,8 +99,10 @@
                 </div>
             </div>
         </section>
+
         <h2>Sección de Ofertas</h2>
-        <section>    
+        <section>
+                
             <div class="product">
                 <div class="product-details">
                     <img class="img-producto" src="../public/images/img-cafetera-moulinex.jpg" alt="Cafetera Moulinex">
@@ -152,7 +161,5 @@
             <p>Copyright &copy; 1999-2020 MercadoLiebre S.R.L.</p>
         </div>
     </footer>
-    
-    
 </body>
 </html>
