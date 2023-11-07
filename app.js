@@ -3,6 +3,7 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'src','views','index.html'));
 });
@@ -29,7 +30,7 @@ const publicPath = path.join(__dirname, 'src');
 
 app.use(express.static(publicPath));
 
-const port = 3003
+const port = process.env.PORT || 3003;
 
 app.listen(port,()=> console.log(`http://localhost:${port}`));
 
