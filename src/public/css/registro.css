@@ -1,0 +1,39 @@
+main{
+   width: 90%;
+   padding: 10px;
+   display: flex;
+   height: 800px;
+   background-image: url(../images/background.jpg);
+   justify-content: center;
+   align-items: center;
+}
+.form-main{
+   width: 60%;
+   height: 75%;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+   background-color: rgb(253, 203, 94);
+}
+#form{
+   display: flex;
+   flex-direction: column;
+}
+h2{
+   position: relative;
+   text-align: center;
+   right: 40px;
+}
+label{
+   margin: 3px;
+}
+
+#intereses{
+   display: flex;
+   flex-direction: column;
+   
+}
+.intereses{
+   margin: 3px;
+   
+}
