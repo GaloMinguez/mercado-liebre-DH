@@ -162,7 +162,7 @@ div.product{
     text-align: center;
     margin: 20px;
     transition: opacity 1s;
-    
+    background-color: #ffffff
 }
 .product:hover {
     opacity: 1;
@@ -183,7 +183,7 @@ div.product{
     border-top: 1px solid #ebebeb;
     margin-top: 1px;
     background-color: #ffffff;
-
+    align-items: center;
 }
 .img-producto {
     text-align: center; 
@@ -225,7 +225,8 @@ div.product{
 }
 .producto {
     font-size: 16px;
-    margin-bottom: 10px;
+    font-weight: bolder;
+    margin-top: 10px;
 }
 
 
