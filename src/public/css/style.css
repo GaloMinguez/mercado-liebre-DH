@@ -158,15 +158,24 @@ section{
 div.product{
     width: max-content;
     padding: 1%;
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
     text-align: center;
     margin: 20px;
+    transition: opacity 1s;
+    
+}
+.product:hover {
+    opacity: 1;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 #product{
     align-content: center;
     max-width: 200px;
-    position: relative;
+    position: relative; 
 }
+
+
+
 .product-details {
     display: flex;
     flex-direction: column;
@@ -187,10 +196,14 @@ div.product{
     height: 30px;
     color: #39b54a;
     position: absolute;
-    top: 200px;
+    top: 190px;
     right: 15px;
     border: 1px solid #39b54a;
     border-radius: 50px;
+    transition: transform 0.4s;
+}
+#camioncito:hover{
+    transform: rotate(-90deg);
 }
 
 .precio-descuento{
